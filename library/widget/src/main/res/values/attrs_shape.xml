@@ -403,4 +403,272 @@
 
     </declare-styleable>
 
+    <declare-styleable name="ShapeCheckBox">
+        <attr name="shape" />
+        <attr name="shapeWidth" />
+        <attr name="shapeHeight" />
+
+        <attr name="solidNormalColor" />
+        <attr name="solidPressedColor" />
+        <attr name="solidCheckedColor" />
+        <attr name="solidDisabledColor" />
+        <attr name="solidFocusedColor" />
+        <attr name="solidSelectedColor" />
+
+        <attr name="cornerRadius" />
+        <attr name="cornerRadiusTopLeft" />
+        <attr name="cornerRadiusTopRight" />
+        <attr name="cornerRadiusBottomLeft" />
+        <attr name="cornerRadiusBottomRight" />
+
+        <attr name="gradientStartColor" />
+        <attr name="gradientCenterColor" />
+        <attr name="gradientEndColor" />
+        <attr name="gradientOrientation" />
+        <attr name="gradientType" />
+        <attr name="gradientCenterX" />
+        <attr name="gradientCenterY" />
+        <attr name="gradientRadius" />
+
+        <attr name="borderNormalColor" />
+        <attr name="borderPressedColor" />
+        <attr name="borderCheckedColor" />
+        <attr name="borderDisabledColor" />
+        <attr name="borderFocusedColor" />
+        <attr name="borderSelectedColor" />
+
+        <attr name="borderNormalWidth" />
+        <attr name="borderPressedWidth" />
+        <attr name="borderCheckedWidth" />
+        <attr name="borderDisabledWidth" />
+        <attr name="borderFocusedWidth" />
+        <attr name="borderSelectedWidth" />
+
+        <attr name="borderDashWidth" />
+        <attr name="borderDashGap" />
+
+        <attr name="textNormalColor" />
+        <attr name="textPressedColor" />
+        <attr name="textCheckedColor" />
+        <attr name="textDisabledColor" />
+        <attr name="textFocusedColor" />
+        <attr name="textSelectedColor" />
+
+    </declare-styleable>
+
+    <declare-styleable name="ShapeConstraintLayout">
+        <attr name="shape" />
+        <attr name="shapeWidth" />
+        <attr name="shapeHeight" />
+
+        <attr name="solidNormalColor" />
+        <attr name="solidPressedColor" />
+        <attr name="solidDisabledColor" />
+        <attr name="solidFocusedColor" />
+        <attr name="solidSelectedColor" />
+
+        <attr name="cornerRadius" />
+        <attr name="cornerRadiusTopLeft" />
+        <attr name="cornerRadiusTopRight" />
+        <attr name="cornerRadiusBottomLeft" />
+        <attr name="cornerRadiusBottomRight" />
+
+        <attr name="gradientStartColor" />
+        <attr name="gradientCenterColor" />
+        <attr name="gradientEndColor" />
+        <attr name="gradientOrientation" />
+        <attr name="gradientType" />
+        <attr name="gradientCenterX" />
+        <attr name="gradientCenterY" />
+        <attr name="gradientRadius" />
+
+        <attr name="borderNormalColor" />
+        <attr name="borderPressedColor" />
+        <attr name="borderDisabledColor" />
+        <attr name="borderFocusedColor" />
+        <attr name="borderSelectedColor" />
+
+        <attr name="borderNormalWidth" />
+        <attr name="borderPressedWidth" />
+        <attr name="borderDisabledWidth" />
+        <attr name="borderFocusedWidth" />
+        <attr name="borderSelectedWidth" />
+
+        <attr name="borderDashWidth" />
+        <attr name="borderDashGap" />
+
+    </declare-styleable>
+
+    <declare-styleable name="ShapeFrameLayout">
+        <attr name="shape" />
+        <attr name="shapeWidth" />
+        <attr name="shapeHeight" />
+
+        <attr name="solidNormalColor" />
+        <attr name="solidPressedColor" />
+        <attr name="solidDisabledColor" />
+        <attr name="solidFocusedColor" />
+        <attr name="solidSelectedColor" />
+
+        <attr name="cornerRadius" />
+        <attr name="cornerRadiusTopLeft" />
+        <attr name="cornerRadiusTopRight" />
+        <attr name="cornerRadiusBottomLeft" />
+        <attr name="cornerRadiusBottomRight" />
+
+        <attr name="gradientStartColor" />
+        <attr name="gradientCenterColor" />
+        <attr name="gradientEndColor" />
+        <attr name="gradientOrientation" />
+        <attr name="gradientType" />
+        <attr name="gradientCenterX" />
+        <attr name="gradientCenterY" />
+        <attr name="gradientRadius" />
+
+        <attr name="borderNormalColor" />
+        <attr name="borderPressedColor" />
+        <attr name="borderDisabledColor" />
+        <attr name="borderFocusedColor" />
+        <attr name="borderSelectedColor" />
+
+        <attr name="borderNormalWidth" />
+        <attr name="borderPressedWidth" />
+        <attr name="borderDisabledWidth" />
+        <attr name="borderFocusedWidth" />
+        <attr name="borderSelectedWidth" />
+
+        <attr name="borderDashWidth" />
+        <attr name="borderDashGap" />
+
+    </declare-styleable>
+
+    <declare-styleable name="ShapeLinearLayout">
+        <attr name="shape" />
+        <attr name="shapeWidth" />
+        <attr name="shapeHeight" />
+
+        <attr name="solidNormalColor" />
+        <attr name="solidPressedColor" />
+        <attr name="solidDisabledColor" />
+        <attr name="solidFocusedColor" />
+        <attr name="solidSelectedColor" />
+
+        <attr name="cornerRadius" />
+        <attr name="cornerRadiusTopLeft" />
+        <attr name="cornerRadiusTopRight" />
+        <attr name="cornerRadiusBottomLeft" />
+        <attr name="cornerRadiusBottomRight" />
+
+        <attr name="gradientStartColor" />
+        <attr name="gradientCenterColor" />
+        <attr name="gradientEndColor" />
+        <attr name="gradientOrientation" />
+        <attr name="gradientType" />
+        <attr name="gradientCenterX" />
+        <attr name="gradientCenterY" />
+        <attr name="gradientRadius" />
+
+        <attr name="borderNormalColor" />
+        <attr name="borderPressedColor" />
+        <attr name="borderDisabledColor" />
+        <attr name="borderFocusedColor" />
+        <attr name="borderSelectedColor" />
+
+        <attr name="borderNormalWidth" />
+        <attr name="borderPressedWidth" />
+        <attr name="borderDisabledWidth" />
+        <attr name="borderFocusedWidth" />
+        <attr name="borderSelectedWidth" />
+
+        <attr name="borderDashWidth" />
+        <attr name="borderDashGap" />
+
+    </declare-styleable>
+
+    <declare-styleable name="ShapeRelativeLayout">
+        <attr name="shape" />
+        <attr name="shapeWidth" />
+        <attr name="shapeHeight" />
+
+        <attr name="solidNormalColor" />
+        <attr name="solidPressedColor" />
+        <attr name="solidDisabledColor" />
+        <attr name="solidFocusedColor" />
+        <attr name="solidSelectedColor" />
+
+        <attr name="cornerRadius" />
+        <attr name="cornerRadiusTopLeft" />
+        <attr name="cornerRadiusTopRight" />
+        <attr name="cornerRadiusBottomLeft" />
+        <attr name="cornerRadiusBottomRight" />
+
+        <attr name="gradientStartColor" />
+        <attr name="gradientCenterColor" />
+        <attr name="gradientEndColor" />
+        <attr name="gradientOrientation" />
+        <attr name="gradientType" />
+        <attr name="gradientCenterX" />
+        <attr name="gradientCenterY" />
+        <attr name="gradientRadius" />
+
+        <attr name="borderNormalColor" />
+        <attr name="borderPressedColor" />
+        <attr name="borderDisabledColor" />
+        <attr name="borderFocusedColor" />
+        <attr name="borderSelectedColor" />
+
+        <attr name="borderNormalWidth" />
+        <attr name="borderPressedWidth" />
+        <attr name="borderDisabledWidth" />
+        <attr name="borderFocusedWidth" />
+        <attr name="borderSelectedWidth" />
+
+        <attr name="borderDashWidth" />
+        <attr name="borderDashGap" />
+
+    </declare-styleable>
+
+    <declare-styleable name="ShapeRecyclerView">
+        <attr name="shape" />
+        <attr name="shapeWidth" />
+        <attr name="shapeHeight" />
+
+        <attr name="solidNormalColor" />
+        <attr name="solidPressedColor" />
+        <attr name="solidDisabledColor" />
+        <attr name="solidFocusedColor" />
+        <attr name="solidSelectedColor" />
+
+        <attr name="cornerRadius" />
+        <attr name="cornerRadiusTopLeft" />
+        <attr name="cornerRadiusTopRight" />
+        <attr name="cornerRadiusBottomLeft" />
+        <attr name="cornerRadiusBottomRight" />
+
+        <attr name="gradientStartColor" />
+        <attr name="gradientCenterColor" />
+        <attr name="gradientEndColor" />
+        <attr name="gradientOrientation" />
+        <attr name="gradientType" />
+        <attr name="gradientCenterX" />
+        <attr name="gradientCenterY" />
+        <attr name="gradientRadius" />
+
+        <attr name="borderNormalColor" />
+        <attr name="borderPressedColor" />
+        <attr name="borderDisabledColor" />
+        <attr name="borderFocusedColor" />
+        <attr name="borderSelectedColor" />
+
+        <attr name="borderNormalWidth" />
+        <attr name="borderPressedWidth" />
+        <attr name="borderDisabledWidth" />
+        <attr name="borderFocusedWidth" />
+        <attr name="borderSelectedWidth" />
+
+        <attr name="borderDashWidth" />
+        <attr name="borderDashGap" />
+
+    </declare-styleable>
+
 </resources>
