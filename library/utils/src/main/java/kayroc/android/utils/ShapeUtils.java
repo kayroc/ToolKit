@@ -14,6 +14,8 @@ import androidx.annotation.RequiresApi;
  *
  * @author kayroc
  * <pre>
+ *     官网介绍
+ *     @see <a href="https://developer.android.google.cn/guide/topics/resources/drawable-resource.html#Shape"/>
  *     Android XML shape 标签使用详解 ( apk 瘦身, 减少内存好帮手 )
  *     @see <a href="https://www.cnblogs.com/popfisher/p/6238119.html"/>
  *     Android GradientDrawable 静态使用和动态使用
