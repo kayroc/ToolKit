@@ -11,7 +11,7 @@ import kayroc.android.widget.shape.IShapeText
  * 支持 xml 设置 shape 属性的 EditText
  * @author : kayroc
  */
-class ShapeEditText @JvmOverloads constructor(
+open class ShapeEditText @JvmOverloads constructor(
     context: Context,
     attributeSet: AttributeSet? = null,
     defStyleAttr: Int = 0
@@ -23,10 +23,10 @@ class ShapeEditText @JvmOverloads constructor(
     override var shapeHeight = -1
 
     override var solidNormalColor = Color.TRANSPARENT
-    override var solidPressedColor = solidNormalColor
-    override var solidDisabledColor = solidNormalColor
-    override var solidFocusedColor = solidNormalColor
-    override var solidSelectedColor = solidNormalColor
+    override var solidPressedColor = Color.TRANSPARENT
+    override var solidDisabledColor = Color.TRANSPARENT
+    override var solidFocusedColor = Color.TRANSPARENT
+    override var solidSelectedColor = Color.TRANSPARENT
 
     override var cornerRadiusTopLeft = 0f
     override var cornerRadiusTopRight = 0f
@@ -43,27 +43,31 @@ class ShapeEditText @JvmOverloads constructor(
     override var gradientRadius = 0f
 
     override var borderNormalColor = Color.TRANSPARENT
-    override var borderPressedColor = borderNormalColor
-    override var borderDisabledColor = borderNormalColor
-    override var borderFocusedColor = borderNormalColor
-    override var borderSelectedColor = borderNormalColor
+    override var borderPressedColor = Color.TRANSPARENT
+    override var borderDisabledColor = Color.TRANSPARENT
+    override var borderFocusedColor = Color.TRANSPARENT
+    override var borderSelectedColor = Color.TRANSPARENT
 
     override var borderNormalWidth = 0
-    override var borderPressedWidth = borderNormalWidth
-    override var borderDisabledWidth = borderNormalWidth
-    override var borderFocusedWidth = borderNormalWidth
-    override var borderSelectedWidth = borderNormalWidth
+    override var borderPressedWidth = 0
+    override var borderDisabledWidth = 0
+    override var borderFocusedWidth = 0
+    override var borderSelectedWidth = 0
 
     override var borderDashWidth = 0f
     override var borderDashGap = 0f
 
     override var textNormalColor = textColors.defaultColor
-    override var textPressedColor = textNormalColor
-    override var textDisabledColor = textNormalColor
-    override var textFocusedColor = textNormalColor
-    override var textSelectedColor = textNormalColor
+    override var textPressedColor = textColors.defaultColor
+    override var textDisabledColor = textColors.defaultColor
+    override var textFocusedColor = textColors.defaultColor
+    override var textSelectedColor = textColors.defaultColor
 
     init {
+        init(context, attributeSet)
+    }
+
+    private fun init(context: Context, attributeSet: AttributeSet?) {
         initCustomAttr(context, attributeSet)
         applyCustomAttr()
     }

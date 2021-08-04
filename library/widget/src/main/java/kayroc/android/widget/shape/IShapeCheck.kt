@@ -33,13 +33,13 @@ interface IShapeCheck<V : CompoundButton> : IShapeText<V> {
         super.initCustomAttr(context, attributeSet)
         val typedArray: TypedArray = context.obtainStyledAttributes(attributeSet, R.styleable.ShapeRadioButton)
 
-        solidCheckedColor = typedArray.getColor(R.styleable.ShapeRadioButton_solidCheckedColor, solidCheckedColor)
+        solidCheckedColor = typedArray.getColor(R.styleable.ShapeRadioButton_solidCheckedColor, solidNormalColor)
 
-        borderCheckedColor = typedArray.getColor(R.styleable.ShapeRadioButton_borderCheckedColor, borderCheckedColor)
+        borderCheckedColor = typedArray.getColor(R.styleable.ShapeRadioButton_borderCheckedColor, borderNormalColor)
 
-        borderCheckedWidth = typedArray.getColor(R.styleable.ShapeRadioButton_borderCheckedWidth, borderCheckedWidth)
+        borderCheckedWidth = typedArray.getColor(R.styleable.ShapeRadioButton_borderCheckedWidth, borderNormalWidth)
 
-        textCheckedColor = typedArray.getColor(R.styleable.ShapeRadioButton_textCheckedColor, textCheckedColor)
+        textCheckedColor = typedArray.getColor(R.styleable.ShapeRadioButton_textCheckedColor, textNormalColor)
 
         typedArray.recycle()
     }
@@ -120,9 +120,9 @@ interface IShapeCheck<V : CompoundButton> : IShapeText<V> {
                 intArrayOf(android.R.attr.state_selected),
                 intArrayOf()
             ), intArrayOf(
-                textNormalColor,
-                textPressedColor,
                 textDisabledColor,
+                textFocusedColor,
+                textPressedColor,
                 textCheckedColor,
                 textSelectedColor,
                 textNormalColor

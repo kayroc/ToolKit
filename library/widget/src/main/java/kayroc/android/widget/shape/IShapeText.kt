@@ -30,10 +30,10 @@ interface IShapeText<V : TextView> : IShapeBase<V> {
         val typedArray: TypedArray = context.obtainStyledAttributes(attributeSet, R.styleable.ShapeTextView)
 
         textNormalColor = typedArray.getColor(R.styleable.ShapeTextView_textNormalColor, textNormalColor)
-        textPressedColor = typedArray.getColor(R.styleable.ShapeTextView_textPressedColor, textPressedColor)
-        textDisabledColor = typedArray.getColor(R.styleable.ShapeTextView_textDisabledColor, textDisabledColor)
-        textFocusedColor = typedArray.getColor(R.styleable.ShapeTextView_textFocusedColor, textFocusedColor)
-        textSelectedColor = typedArray.getColor(R.styleable.ShapeTextView_textSelectedColor, textSelectedColor)
+        textPressedColor = typedArray.getColor(R.styleable.ShapeTextView_textPressedColor, textNormalColor)
+        textDisabledColor = typedArray.getColor(R.styleable.ShapeTextView_textDisabledColor, textNormalColor)
+        textFocusedColor = typedArray.getColor(R.styleable.ShapeTextView_textFocusedColor, textNormalColor)
+        textSelectedColor = typedArray.getColor(R.styleable.ShapeTextView_textSelectedColor, textNormalColor)
 
         typedArray.recycle()
     }
