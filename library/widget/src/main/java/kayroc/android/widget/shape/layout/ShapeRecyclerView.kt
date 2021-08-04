@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import kayroc.android.widget.shape.IShapeBase
 
 /**
+ * 支持 xml 设置 shape 属性的 RecyclerView
  * @author : kayroc
  */
 class ShapeRecyclerView @JvmOverloads constructor(

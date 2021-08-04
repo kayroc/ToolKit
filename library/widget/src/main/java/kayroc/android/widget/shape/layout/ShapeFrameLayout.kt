@@ -8,6 +8,7 @@ import android.widget.FrameLayout
 import kayroc.android.widget.shape.IShapeBase
 
 /**
+ * 支持 xml 设置 shape 属性的 FrameLayout
  * @author : kayroc
  */
 class ShapeFrameLayout @JvmOverloads constructor(

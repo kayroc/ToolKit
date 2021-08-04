@@ -4,17 +4,18 @@ import android.content.Context
 import android.graphics.Color
 import android.graphics.drawable.GradientDrawable
 import android.util.AttributeSet
-import androidx.appcompat.widget.AppCompatTextView
+import androidx.constraintlayout.widget.ConstraintLayout
 import kayroc.android.widget.shape.IShapeBase
 
 /**
+ * 支持 xml 设置 shape 属性的 Button
  * @author : kayroc
  */
 class ShapeConstraintLayout @JvmOverloads constructor(
     context: Context,
     attributeSet: AttributeSet? = null,
     defStyleAttr: Int = 0
-) : AppCompatTextView(context, attributeSet, defStyleAttr),
+) : ConstraintLayout(context, attributeSet, defStyleAttr),
     IShapeBase<ShapeConstraintLayout> {
 
     override var shape = GradientDrawable.RECTANGLE
