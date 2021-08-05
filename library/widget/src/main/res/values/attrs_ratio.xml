@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="ratio" format="string" />
+
+    <!-- 可设置宽高比的 ImageView -->
+    <declare-styleable name="RatioImageView">
+        <attr name="ratio"/>
+    </declare-styleable>
+
+    <!-- 可设置宽高比的 LinearLayout -->
+    <declare-styleable name="RatioLinearLayout">
+        <attr name="ratio"/>
+    </declare-styleable>
+
+    <!-- 可设置宽高比的 RelativeLayout -->
+    <declare-styleable name="RatioRelativeLayout">
+        <attr name="ratio"/>
+    </declare-styleable>
+
+    <!-- 可设置宽高比的 FrameLayout -->
+    <declare-styleable name="RatioFrameLayout">
+        <attr name="ratio"/>
+    </declare-styleable>
+
+    <!-- 可设置宽高比的 ConstraintLayout -->
+    <declare-styleable name="RatioConstraintLayout">
+        <attr name="ratio"/>
+    </declare-styleable>
+</resources>

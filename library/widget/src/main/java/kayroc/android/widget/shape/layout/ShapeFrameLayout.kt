@@ -58,10 +58,10 @@ open class ShapeFrameLayout @JvmOverloads constructor(
     override var borderDashGap = 0f
 
     init {
-        init(context, attributeSet)
+        initAttr(context, attributeSet)
     }
 
-    private fun init(context: Context, attributeSet: AttributeSet?) {
+    private fun initAttr(context: Context, attributeSet: AttributeSet?) {
         initCustomAttr(context, attributeSet)
         applyCustomAttr()
     }

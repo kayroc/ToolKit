@@ -3,6 +3,7 @@ package kayroc.android.widget.textview
 import android.content.Context
 import android.text.TextUtils
 import android.util.AttributeSet
+import android.util.Log
 import android.view.View
 import androidx.core.view.isGone
 import androidx.core.view.isVisible
@@ -20,6 +21,10 @@ class SmartTextView @JvmOverloads constructor(
     attributeSet: AttributeSet? = null,
     defStyleAttr: Int = 0
 ) : ShapeTextView(context, attributeSet, defStyleAttr) {
+
+    init {
+        Log.d("初始化测试", "SmartTextView construct")
+    }
 
     override fun setText(text: CharSequence?, type: BufferType?) {
         super.setText(text, type)

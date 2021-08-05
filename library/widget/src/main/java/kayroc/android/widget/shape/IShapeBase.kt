@@ -349,7 +349,6 @@ interface IShapeBase<V: View> {
     /**
      * 应用属性
      * 为防止频繁创建 Drawable，请在更改自定义属性后，再次调用此方法
-     * @param view View
      */
     fun applyCustomAttr() {
         val contentDrawable = buildContentDrawable()
