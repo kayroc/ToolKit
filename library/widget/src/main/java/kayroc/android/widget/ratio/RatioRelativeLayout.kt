@@ -20,10 +20,10 @@ open class RatioRelativeLayout @JvmOverloads constructor(
     private var mHeightRatio = 0f
 
     init {
-        initAttr(context, attributeSet)
+        initView(context, attributeSet)
     }
 
-    private fun initAttr(context: Context, attributeSet: AttributeSet?) {
+    private fun initView(context: Context, attributeSet: AttributeSet?) {
         val typedArray = context.obtainStyledAttributes(attributeSet, R.styleable.RatioRelativeLayout)
         val ratio = typedArray.getString(R.styleable.RatioRelativeLayout_ratio)
         typedArray.recycle()

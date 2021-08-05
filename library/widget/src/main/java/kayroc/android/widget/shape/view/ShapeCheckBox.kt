@@ -68,10 +68,10 @@ open class ShapeCheckBox @JvmOverloads constructor(
     override var textCheckedColor = textColors.defaultColor
 
     init {
-        initAttr(context, attributeSet)
+        initView(context, attributeSet)
     }
 
-    private fun initAttr(context: Context, attributeSet: AttributeSet?) {
+    private fun initView(context: Context, attributeSet: AttributeSet?) {
         initCustomAttr(context, attributeSet)
         applyCustomAttr()
     }

@@ -20,10 +20,10 @@ open class RatioConstraintLayout @JvmOverloads constructor(
     private var mHeightRatio = 0f
 
     init {
-        initAttr(context, attributeSet)
+        initView(context, attributeSet)
     }
 
-    private fun initAttr(context: Context, attributeSet: AttributeSet?) {
+    private fun initView(context: Context, attributeSet: AttributeSet?) {
         val typedArray = context.obtainStyledAttributes(attributeSet, R.styleable.RatioConstraintLayout)
         val ratio = typedArray.getString(R.styleable.RatioConstraintLayout_ratio)
         typedArray.recycle()

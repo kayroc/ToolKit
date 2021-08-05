@@ -9,7 +9,7 @@ import kayroc.android.widget.shape.IShapeText
 
 /**
  * 支持 xml 设置 shape 属性的 Button
- * @author : kayroc
+ * @author kayroc
  */
 open class ShapeButton @JvmOverloads constructor(
     context: Context,
@@ -64,10 +64,10 @@ open class ShapeButton @JvmOverloads constructor(
     override var textSelectedColor = textColors.defaultColor
 
     init {
-        initAttr(context, attributeSet)
+        initView(context, attributeSet)
     }
 
-    private fun initAttr(context: Context, attributeSet: AttributeSet?) {
+    private fun initView(context: Context, attributeSet: AttributeSet?) {
         initCustomAttr(context, attributeSet)
         applyCustomAttr()
     }

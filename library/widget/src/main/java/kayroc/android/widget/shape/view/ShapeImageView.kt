@@ -9,7 +9,7 @@ import kayroc.android.widget.shape.IShapeBase
 
 /**
  * 支持 xml 设置 shape 属性的 ImageView
- * @author : kayroc
+ * @author kayroc
  */
 open class ShapeImageView @JvmOverloads constructor(
     context: Context,
@@ -58,10 +58,10 @@ open class ShapeImageView @JvmOverloads constructor(
     override var borderDashGap = 0f
 
     init {
-        initAttr(context, attributeSet)
+        initView(context, attributeSet)
     }
 
-    private fun initAttr(context: Context, attributeSet: AttributeSet?) {
+    private fun initView(context: Context, attributeSet: AttributeSet?) {
         initCustomAttr(context, attributeSet)
         applyCustomAttr()
     }

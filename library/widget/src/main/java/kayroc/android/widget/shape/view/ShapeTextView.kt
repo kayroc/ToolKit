@@ -64,10 +64,10 @@ open class ShapeTextView @JvmOverloads constructor(
     override var textSelectedColor = textColors.defaultColor
 
     init {
-        initAttr(context, attributeSet)
+        initView(context, attributeSet)
     }
 
-    private fun initAttr(context: Context, attributeSet: AttributeSet?) {
+    private fun initView(context: Context, attributeSet: AttributeSet?) {
         initCustomAttr(context, attributeSet)
         applyCustomAttr()
     }
