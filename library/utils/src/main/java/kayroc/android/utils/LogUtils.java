@@ -45,7 +45,7 @@ public final class LogUtils {
         String msg
     ) {
         if (isDebug) {
-            Log.i(tag, getMsgFormat(msg));
+            Log.v(tag, getMsgFormat(msg));
         }
     }
 
@@ -71,7 +71,7 @@ public final class LogUtils {
         String msg
     ) {
         if (isDebug) {
-            Log.i(tag, getMsgFormat(msg));
+            Log.d(tag, getMsgFormat(msg));
         }
     }
 
@@ -149,7 +149,7 @@ public final class LogUtils {
         String msg
     ) {
         if (isDebug) {
-            Log.i(tag, getMsgFormat(msg));
+            Log.e(tag, getMsgFormat(msg));
         }
     }
 
