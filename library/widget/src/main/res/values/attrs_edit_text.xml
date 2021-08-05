@@ -2,6 +2,7 @@
 <resources>
     <!-- 带删除按钮的输入框 -->
     <declare-styleable name="ClearEditText">
+        <!--删除图标-->
         <attr name="clearDrawable" format="reference"/>
     </declare-styleable>
 </resources>
