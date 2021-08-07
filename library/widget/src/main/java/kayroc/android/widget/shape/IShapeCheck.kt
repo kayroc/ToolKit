@@ -15,7 +15,7 @@ import kayroc.android.widget.R
  * CompoundButton 协议
  * @author : kayroc
  */
-interface IShapeCheck<V : CompoundButton> : IShapeText<V> {
+interface IShapeCheck<out V : CompoundButton> : IShapeText<V> {
 
     /** 选中状态填充色 推荐默认值：solidNormalColor */
     var solidCheckedColor: Int

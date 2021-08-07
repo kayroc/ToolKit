@@ -11,7 +11,7 @@ import kayroc.android.widget.R
  * TextView 协议
  * @author : kayroc
  */
-interface IShapeText<V : TextView> : IShapeBase<V> {
+interface IShapeText<out V : TextView> : IShapeBase<V> {
 
     /** 正常状态字体颜色 推荐默认值：textColors.defaultColor */
     var textNormalColor: Int

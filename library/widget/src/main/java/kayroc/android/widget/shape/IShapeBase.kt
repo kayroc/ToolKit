@@ -14,7 +14,7 @@ import kayroc.android.widget.R
  * ShapeView 通用协议
  * @author : kayroc
  */
-interface IShapeBase<V: View> {
+interface IShapeBase<out V: View> {
 
     /** Shape 形状 推荐默认值：[GradientDrawable.RECTANGLE] */
     var shape: Int
