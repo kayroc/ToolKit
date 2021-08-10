@@ -296,4 +296,20 @@
     <color name="md_blue_grey_700">#455A64</color>
     <color name="md_blue_grey_800">#37474F</color>
     <color name="md_blue_grey_900">#263238</color>
+
+    <!--https://www.mdui.org/docs/color-->
+
+    <color name="md_text_color_black_text">@color/black87</color>
+    <color name="md_text_color_black_secondary">@color/black54</color>
+    <color name="md_text_color_black_disabled">@color/black38</color>
+    <color name="md_text_color_black_divider">@color/black12</color>
+    <color name="md_text_color_black_icon">@color/black54</color>
+    <color name="md_text_color_black_icon_disabled">@color/black26</color>
+
+    <color name="md_text_color_white_text">@color/white</color>
+    <color name="md_text_color_white_secondary">@color/white70</color>
+    <color name="md_text_color_white_disabled">@color/white50</color>
+    <color name="md_text_color_white_divider">@color/white12</color>
+    <color name="md_text_color_white_icon">@color/white</color>
+    <color name="md_text_color_white_icon_disabled">@color/white30</color>
 </resources>
