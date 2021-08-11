@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TitleBar">
+        <!--整体样式-->
+        <attr name="barStyle" format="integer">
+            <enum name="light" value="1" />
+            <enum name="Dark" value="2" />
+        </attr>
+        <!--容器横向内间距-->
+        <attr name="containerHorizontalPadding" format="dimension" />
+        <!--容器中标题的纵向内间距-->
+        <attr name="titleVerticalPadding" format="dimension" />
+
+        <!--导航图标-->
+        <attr name="navIcon" format="reference" />
+        <!--导航图标与左标题的间距-->
+        <attr name="navAndLeftTitleSpacing" format="dimension" />
+        <!--显示导航图标-->
+        <attr name="showNavIcon" format="boolean" />
+
+        <!--标题字体-->
+        <attr name="fontFamily" format="string" />
+
+        <!--左标题文本-->
+        <attr name="leftText" format="string" />
+        <!--左标题文本颜色-->
+        <attr name="leftTextColor" format="color" />
+        <!--左标题字体大小-->
+        <attr name="leftTextSize" format="dimension" />
+
+        <!--中间标题文本-->
+        <attr name="titleText" format="string" />
+        <!--中间标题文本颜色-->
+        <attr name="titleTextColor" format="color" />
+        <!--中间标题字体大小-->
+        <attr name="titleTextSize" format="dimension" />
+
+        <!--右标题文本-->
+        <attr name="rightText" format="string" />
+        <!--右标题文本颜色-->
+        <attr name="rightTextColor" format="color" />
+        <!--右标题字体大小-->
+        <attr name="rightTextSize" format="dimension" />
+        <!--右标题图标-->
+        <attr name="rightIcon" format="reference" />
+
+    </declare-styleable>
+</resources>

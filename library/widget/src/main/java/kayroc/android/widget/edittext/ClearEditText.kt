@@ -24,7 +24,7 @@ class ClearEditText @JvmOverloads constructor(
 ) : ShapeEditText(context, attributeSet, defStyleAttr),
     View.OnFocusChangeListener, TextWatcher {
 
-    var clearDrawable: Drawable? = null
+    private var clearDrawable: Drawable? = null
 
     init {
         val typedArray = context.obtainStyledAttributes(attributeSet, R.styleable.ClearEditText)
