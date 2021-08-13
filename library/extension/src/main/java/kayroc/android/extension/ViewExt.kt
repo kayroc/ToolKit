@@ -3,13 +3,6 @@ package kayroc.android.extension
 import android.view.View
 import android.view.ViewGroup
 
-/**
- * View 扩展
- *
- * @author : kayroc
- * @date   : 2021/1/27
- */
-
 /** 所有子 View */
 inline val ViewGroup.children
     get() = (0 until childCount).map { getChildAt(it) }

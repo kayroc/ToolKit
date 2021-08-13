@@ -15,7 +15,7 @@ import kayroc.android.widget.R
  * @author : kayroc
  * @date   : 2021/1/24
  */
-class DarkInitializer : BaseInitializer() {
+class BlackInitializer : BaseInitializer() {
 
     override fun getContainerBackground(context: Context): Drawable = ColorDrawable(Color.BLACK)
 

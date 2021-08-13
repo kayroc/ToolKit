@@ -14,9 +14,9 @@ import kayroc.android.extension.*
 import kayroc.android.widget.R
 import kayroc.android.widget.textview.SmartTextView
 import kayroc.android.widget.titlebar.initializer.BaseInitializer
-import kayroc.android.widget.titlebar.initializer.DarkInitializer
+import kayroc.android.widget.titlebar.initializer.BlackInitializer
 import kayroc.android.widget.titlebar.initializer.DefaultInitializer
-import kayroc.android.widget.titlebar.initializer.LightInitializer
+import kayroc.android.widget.titlebar.initializer.WhiteInitializer
 
 /**
  * 标题栏组件
@@ -57,217 +57,45 @@ class TitleBar @JvmOverloads constructor(
     private lateinit var mLeftView: SmartTextView
     private lateinit var mTitleView: SmartTextView
     private lateinit var mRightView: SmartTextView
-    private var mInitFinish: Boolean = false
 
     /** 中间标题文本颜色 */
     var containerBackground = mInitializer.getContainerBackground(context)
-        set(value) {
-            field = value
-            applyContainerLayout()
-        }
-
     /** 容器横向内间距 */
     var containerHorizontalPadding = mInitializer.getContainerHorizontalPadding(context)
-        set(value) {
-            field = value
-            applyContainerLayout()
-        }
-
     /** 容器中标题的垂直内间距，用于撑起标题栏 */
     var titleVerticalPadding = mInitializer.getTitleVerticalPadding(context)
-        set(value) {
-            field = value
-            applyLeftView()
-            applyTitleView()
-        }
 
     /** 导航图标 */
     var navIcon: Drawable? = mInitializer.getNavIcon(context)
-        set(value) {
-            field = value
-            applyNavView()
-            resetTitlePadding()
-        }
-
     /** 导航图标与左标题的间距 */
     var navAndLeftTitleSpacing = mInitializer.getNavAndLeftTitleSpacing(context)
-        set(value) {
-            field = value
-            applyNavView()
-            resetTitlePadding()
-        }
-
     /** 显示导航图标 */
     var showNavIcon: Boolean = navIcon != null
-        set(value) {
-            field = value
-            applyNavView()
-            resetTitlePadding()
-        }
 
     /** 左侧标题字体 */
     var fontFamily: String = mInitializer.getFontFamily(context)
-        set(value) {
-            field = value
-            applyLeftView()
-            resetTitlePadding()
-        }
-
     /** 左侧标题文本 */
     var leftText: String? = ""
-        set(value) {
-            field = value
-            applyLeftView()
-            resetTitlePadding()
-        }
-
     /** 左侧标题文本颜色 */
     var leftTextColor = mInitializer.getLeftTextColor(context)
-        set(value) {
-            field = value
-            applyLeftView()
-        }
-
     /** 左侧标题文字大小 */
     var leftTextSize = mInitializer.getLeftTextSize(context)
-        set(value) {
-            field = value
-            applyLeftView()
-            resetTitlePadding()
-        }
 
     /** 中间标题文本 */
     var titleText: String? = ""
-        set(value) {
-            field = value
-            applyTitleView()
-            resetTitlePadding()
-        }
-
     /** 中间标题文本颜色 */
     var titleTextColor = mInitializer.getTitleTextColor(context)
-        set(value) {
-            field = value
-            applyTitleView()
-        }
-
     /** 中间标题文字大小 */
     var titleTextSize = mInitializer.getTitleTextSize(context)
-        set(value) {
-            field = value
-            applyTitleView()
-            resetTitlePadding()
-        }
 
     /** 右侧标题文本 */
     var rightText: String? = ""
-        set(value) {
-            field = value
-            applyRightView()
-            resetTitlePadding()
-        }
-
     /** 右侧标题文本颜色 */
     var rightTextColor = mInitializer.getRightTextColor(context)
-        set(value) {
-            field = value
-            applyRightView()
-        }
-
     /** 右侧标题文字大小 */
     var rightTextSize = mInitializer.getRightTextSize(context)
-        set(value) {
-            field = value
-            applyRightView()
-            resetTitlePadding()
-        }
-
     /** 右侧标题图标 */
     var rightIcon: Drawable? = null
-        set(value) {
-            field = value
-            applyRightView()
-            resetTitlePadding()
-        }
-
-    /** 设置容器 */
-    fun setContainer(
-        containerHorizontalPadding: Int = this.containerHorizontalPadding
-    ): TitleBar {
-        this.containerHorizontalPadding = containerHorizontalPadding
-        applyContainerLayout()
-        return this
-    }
-
-    /** 设置导航图标 */
-    fun setNav(
-        showNavIcon: Boolean = true,
-        navIcon: Drawable? = this.navIcon,
-        navAndLeftTitleSpacing: Int = this.navAndLeftTitleSpacing
-    ): TitleBar {
-        this.showNavIcon = showNavIcon
-        this.navIcon = navIcon
-        this.navAndLeftTitleSpacing = navAndLeftTitleSpacing
-        applyNavView()
-        resetTitlePadding()
-        return this
-    }
-
-    /** 设置左标题 */
-    fun setLeftView(
-        text: String? = leftText,
-        textColor: Int = leftTextColor,
-        textSize: Int = leftTextSize
-    ): TitleBar {
-        leftText = text
-        leftTextColor = textColor
-        leftTextSize = textSize
-        applyLeftView()
-        resetTitlePadding()
-        return this
-    }
-
-    /** 设置中间标题 */
-    fun setTitleView(
-        text: String? = titleText,
-        textColor: Int = titleTextColor,
-        textSize: Int = titleTextSize
-    ): TitleBar {
-        titleText = text
-        titleTextColor = textColor
-        titleTextSize = textSize
-        applyTitleView()
-        resetTitlePadding()
-        return this
-    }
-
-    /** 设置右侧标题 */
-    fun setRightView(
-        text: String? = rightText,
-        textColor: Int = rightTextColor,
-        textSize: Int = rightTextSize,
-        rightIcon: Drawable? = this.rightIcon
-    ): TitleBar {
-        rightText = text
-        rightTextColor = textColor
-        rightTextSize = textSize
-        this.rightIcon = rightIcon
-        applyRightView()
-        resetTitlePadding()
-        return this
-    }
-
-    /** 设置字体 */
-    fun setFontFamily(
-        fontFamily: String = this.fontFamily
-    ): TitleBar {
-        this.fontFamily = fontFamily
-        applyLeftView()
-        applyTitleView()
-        applyRightView()
-        resetTitlePadding()
-        return this
-    }
 
     private var mListener: TitleBarListener? = null
 
@@ -280,25 +108,21 @@ class TitleBar @JvmOverloads constructor(
 
     init {
         initView()
-
         initAttrs(context, attributeSet)
+        applyAttrs()
+    }
 
+    fun applyAttrs() {
         applyContainerLayout()
         applyLeftView()
         applyTitleView()
         applyRightView()
         applyNavView()
-
-        mInitFinish = true
         resetTitlePadding()
     }
 
     private fun resetTitlePadding() {
         mLayoutContainer.post {
-            // 当前必须已经初始化完成
-            if (!mInitFinish) {
-                return@post
-            }
             // 更新中间标题的内边距，避免向左或者向右偏移
             val leftSize =
                 if (mLeftView.isVisible) mNavView.width + mLeftView.width + navAndLeftTitleSpacing
@@ -367,8 +191,8 @@ class TitleBar @JvmOverloads constructor(
         val typedArray = context.obtainStyledAttributes(attributeSet, R.styleable.TitleBar)
 
         mInitializer = when (typedArray.getInt(R.styleable.TitleBar_barStyle, 0)) {
-            1 -> LightInitializer()
-            2 -> DarkInitializer()
+            1 -> WhiteInitializer()
+            2 -> BlackInitializer()
             else -> DefaultInitializer()
         }
 
