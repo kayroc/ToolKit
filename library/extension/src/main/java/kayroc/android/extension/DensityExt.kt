@@ -1,4 +1,4 @@
-package kayroc.android.toolkit.extension
+package kayroc.android.extension
 
 import android.content.res.Resources
 import android.util.TypedValue

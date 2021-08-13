@@ -9,8 +9,8 @@ import android.view.ViewGroup
 import android.widget.LinearLayout
 import androidx.appcompat.widget.AppCompatImageView
 import kayroc.android.extension.colorPrimary
-import kayroc.android.toolkit.extension.dp
-import kayroc.android.toolkit.extension.sp
+import kayroc.android.extension.dp
+import kayroc.android.extension.sp
 import kayroc.android.widget.textview.SmartTextView
 
 
